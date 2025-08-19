@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="read1.css">
+</head>
+<body>
+    <nav>
+    <h1>BOOK STORE</h1>
+    <ul>
+        <li><a href="login.html">log in</a></li>
+        <li><a href="sign.html">Sign in</a></li>
+        <li><a href="about.html">about</a></li>
+    </ul>
+    </nav>
+
+
+<input type="text" id ="searchInput"placeholder="Search">
+<h3>Categories</h3>
+
+<select class="pri">
+    <option>Action Thriller</option>
+    <option>Horror</option>
+    <option>Mystery</option>
+    <option>Sci-fi book</option>
+    <option>fiction</option>
+    <option>Romance</option>
+    <option>history</option>
+    <option>Psycological books</option>
+    <option>Anime</option>
+
+</select>
+
+<h3>BestSellers</h3>
+<div>
+    <img src="https://miro.medium.com/v2/resize:fit:1024/1*kDpDKNURXv1KKPnJJWRjnA.jpeg" alt="ikigai" width="290px">
+    <p>Author:Héctor García and Francesc Miralle
+        <br>
+        Ikigai  is a Japanese concept referring to what an individual defines to be the meaning of their life.
+        <br>
+        <br>
+        PRICE:<s> Rs.450</s> <strong>Rs.300</strong> <br>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+        <br>
+        <button id="buy1">Buy</button>
+        <button id= "addToCart1">Add To Cart</button>
+    </p>
+</div>
+<br>
+<br>
+<div class="two">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_mdxMEGJDfe2PVBD2afNDGQLKQGSAmPSNCw&s" alt="Rich dad poor Dad" width="180">
+        <br>
+        <p> Author Name:Robert Kiyosaki
+            <br>
+        Rich Dad Poor Dad is a 1997 book . It advocates the importance of financial literacy , financial independence.
+        <br>
+        <br>
+        PRICE:<s> Rs.350</s> <strong>Rs.199</strong>
+        <br>
+        <br>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span> 
+        <span>&#9733;</span>
+        <span>&#9734;</span>
+        <br>
+        
+        <button id="buy1">Buy</button>
+        <button id= "addToCart2">Add To Cart</button>
+    
+    </p>
+
+</div>
+<br>
+<br>
+<div clas="two">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6gLgRmwpn99yn-kxXmUvLItXvp_FMceO2cQ&s" alt="Power of the subconcious mind" width="150 px">
+    <p>Author:Joseph Murphy
+
+        <br>
+        The Power of Your Subconscious Mind' talks about the importance of taking responsibility for your thoughts, beliefs, and actions. 
+        <br>
+        <br>
+        PRICE:<s> Rs.420</s> <strong>Rs.259</strong>
+        <br>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9734;</span> 
+        <span>&#9734;</span>
+        <br>
+        <button id="buy1">Buy</button>
+        <button id= "addToCart3">Add To Cart</button>
+    </p>
+</div>
+<br>
+<div>
+    <img src="https://th.bing.com/th/id/OIP.rtK8covpikTJGSTcYBjkjAHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Pride and Prejudice" width="150px">
+
+        <br>
+        <br>
+        <p>
+        The Power of Your Subconscious Mind' talks about the importance of taking responsibility for your thoughts, beliefs, and actions. 
+        <br>
+        PRICE:<s> Rs.420</s> <strong>Rs.259</strong>
+        <br>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9734;</span> 
+        <span>&#9734;</span>
+        <br>
+        <button id="buy1">Buy</button>
+        <button id= "addToCart4">Add To Cart</button>
+    </p>
+</div>
+<script>
+    const bookLinks = {
+      "ikigai": "https://www.goodreads.com/book/show/31684842-ikigai",
+      "rich dad poor dad": "https://www.richdad.com/books/rich-dad-poor-dad",
+      "power of your subconscious mind": "https://www.goodreads.com/book/show/105651.The_Power_of_Your_Subconscious_Mind",
+      "pride and prejudice": "https://www.goodreads.com/book/show/1885.Pride_and_Prejudice"
+    };
+  
+    const input = document.getElementById("searchInput");
+
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    const query = input.value.toLowerCase().trim();
+    if (bookLinks[query]) {
+      window.open(bookLinks[query], "_blank");
+    } else {
+      alert("Book not found. Please try a different title.");
+    }
+  }
+  });
+</script>
+    
+<script>
+    document.getElementById("addToCart1").addEventListener("click", function () {
+      alert("Ikigai has been added to your cart!");
+    });
+  
+    document.getElementById("addToCart2").addEventListener("click", function () {
+      alert("Rich Dad Poor Dad has been added to your cart!");
+    });
+  
+    document.getElementById("addToCart3").addEventListener("click", function () {
+      alert("The Power of Your Subconscious Mind has been added to your cart!");
+    });
+  
+    document.getElementById("addToCart4").addEventListener("click", function () {
+      alert("Pride and Prejudice has been added to your cart!");
+    });
+  </script>
+  <script>
+  document.getElementById("buy1").addEventListener("click", function () {
+    window.location.href = "payment.html";
+  });
+  </script>
+    
+</body>
+</html>

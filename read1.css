@@ -1,0 +1,103 @@
+nav{
+    color:white;
+    background-color: rgba(180, 90, 236, 0.912);
+    padding:30px;
+    border:30px;
+    border-color:rgb(168, 57, 205);
+    border-style: solid;
+
+
+}
+ul{
+    margin-left:550px;
+
+}
+li{
+    margin-right:35px;
+
+}
+li,h1,ul{
+    display:inline;
+
+}
+li:hover{
+    color:blueviolet;
+}nav{
+    font-family:"Lato",sans-serif;
+}
+ul,input,h3{
+    font-family:"Dancing Script",cursive;
+    font-size: 25px;
+}
+input{
+    border: 5px;
+    border-color: rgb(168, 57, 205);
+    border-style:solid;
+    margin-top: 60px;
+    margin-left:40px;
+    width:80%;
+    padding:15px;
+    border-radius: 40px;
+    font-size:25px;
+    outline: none;
+}
+input:hover{
+    color:blueviolet;
+}
+div{
+    border:5px ;
+    height:250px;
+    width:70%;
+    border-style: solid;
+    border-color:  rgba(180, 90, 236, 0.912);
+    border-radius: 30px;
+    display:flex;
+    align-items: center;
+}
+img{
+    padding-top:5px;
+    border-radius: 45px;
+    padding-left:20px;
+}
+p{
+    margin-left: 100px;
+    font-family:"Dancing Script",cursive;
+    font-size: 20px;
+}
+button{
+    padding:15px;
+    color:#ffffff;
+    background-color:  rgba(180, 90, 236, 0.912);
+    border:2px;
+    border-color:rgb(168, 57, 205);  
+    border-radius:18px;
+
+}
+button{
+    font-family:"Dancing Script",cursive;
+      font-size: 20px;
+}
+.one{
+    margin-left:30px;
+}
+.two{
+    margin-left:30px;
+
+}
+span{
+    color:#f1c542;
+
+}
+h1{
+    color:#ffffff;
+}
+.pri{
+    padding:20px;
+    border:20px;
+    border-style: solid;
+    border-radius: 3px;
+    font-family:"Dancing Script",cursive;
+    color: rgba(180, 90, 236, 0.912);
+    border:2px;
+    font-size: 25px;
+}
